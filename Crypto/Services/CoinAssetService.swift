@@ -53,7 +53,7 @@ class CoinAssetService {
                  let coinModel = CoinAssetModel(
                     assetId: coin.asset_id,
                     name: coin.name,
-                    priceUSD: coin.price_usd)
+                    value: coin.price_usd)
                  list.append(coinModel)
              }
              

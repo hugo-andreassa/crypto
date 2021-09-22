@@ -23,6 +23,7 @@
 		BA7AB57726FBB88B003F3C2E /* CoinAssetService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7AB57626FBB88B003F3C2E /* CoinAssetService.swift */; };
 		BA7AB57D26FBCA2E003F3C2E /* CoinTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7AB57B26FBCA2E003F3C2E /* CoinTableViewCell.swift */; };
 		BA7AB57E26FBCA2E003F3C2E /* CoinTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA7AB57C26FBCA2E003F3C2E /* CoinTableViewCell.xib */; };
+		BAFA4BF426FBF402008DBC6B /* FormatterUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFA4BF326FBF402008DBC6B /* FormatterUtils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,7 @@
 		BA7AB57626FBB88B003F3C2E /* CoinAssetService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinAssetService.swift; sourceTree = "<group>"; };
 		BA7AB57B26FBCA2E003F3C2E /* CoinTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinTableViewCell.swift; sourceTree = "<group>"; };
 		BA7AB57C26FBCA2E003F3C2E /* CoinTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CoinTableViewCell.xib; sourceTree = "<group>"; };
+		BAFA4BF326FBF402008DBC6B /* FormatterUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormatterUtils.swift; sourceTree = "<group>"; };
 		FF5072529B22A5848D156FCD /* Pods-Crypto.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Crypto.release.xcconfig"; path = "Target Support Files/Pods-Crypto/Pods-Crypto.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -100,6 +102,7 @@
 			children = (
 				BA7AB56126FB9684003F3C2E /* Supporting Files */,
 				BA7AB56526FB97A2003F3C2E /* Services */,
+				BAFA4BF526FBF407008DBC6B /* Utils */,
 				BA7AB56426FB96B8003F3C2E /* Models */,
 				BA7AB56326FB96AC003F3C2E /* Views */,
 				BA7AB56226FB969F003F3C2E /* Controllers */,
@@ -174,6 +177,14 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
+		BAFA4BF526FBF407008DBC6B /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				BAFA4BF326FBF402008DBC6B /* FormatterUtils.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -185,6 +196,7 @@
 				BA7AB54626FB966C003F3C2E /* Sources */,
 				BA7AB54726FB966C003F3C2E /* Frameworks */,
 				BA7AB54826FB966C003F3C2E /* Resources */,
+				BC9B3645426EC66F86D6D33C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -244,6 +256,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		BC9B3645426EC66F86D6D33C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Crypto/Pods-Crypto-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Crypto/Pods-Crypto-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Crypto/Pods-Crypto-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		D2B26A53FED7BCDA13083874 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -274,6 +303,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA7AB55226FB966C003F3C2E /* HomeViewController.swift in Sources */,
+				BAFA4BF426FBF402008DBC6B /* FormatterUtils.swift in Sources */,
 				BA7AB54E26FB966C003F3C2E /* AppDelegate.swift in Sources */,
 				BA7AB56F26FBB165003F3C2E /* CoinRateData.swift in Sources */,
 				BA7AB56926FBA8DC003F3C2E /* CoinRateService.swift in Sources */,

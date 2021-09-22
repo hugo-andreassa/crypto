@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="3eU-6z-neU"/>
+                        <segue destination="z43-RW-bWo" kind="relationship" relationship="rootViewController" id="d9f-x1-fDK"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="djt-an-6ai" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -25,39 +25,39 @@
             <point key="canvasLocation" x="-632" y="110"/>
         </scene>
         <!--Home View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <scene sceneID="123-YM-oIF">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="Crypto" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <viewController id="z43-RW-bWo" customClass="HomeViewController" customModule="Crypto" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4UB-nt-6gx">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="pf2-FW-T8T">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="wa0-cw-FTP">
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <connections>
-                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="BQu-Cf-XcW"/>
-                                    <outlet property="delegate" destination="BYZ-38-t0r" id="wxQ-4y-fn8"/>
+                                    <outlet property="dataSource" destination="z43-RW-bWo" id="SqW-Wy-yg0"/>
+                                    <outlet property="delegate" destination="z43-RW-bWo" id="eNn-Iv-YpW"/>
                                 </connections>
                             </tableView>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <viewLayoutGuide key="safeArea" id="jDN-aH-Auy"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="pf2-FW-T8T" secondAttribute="bottom" id="8vG-KE-z8B"/>
-                            <constraint firstItem="pf2-FW-T8T" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="AZx-bW-6rL"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pf2-FW-T8T" secondAttribute="trailing" id="EI0-n9-vOT"/>
-                            <constraint firstItem="pf2-FW-T8T" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="tNs-4S-FZW"/>
+                            <constraint firstItem="wa0-cw-FTP" firstAttribute="leading" secondItem="jDN-aH-Auy" secondAttribute="leading" id="4LR-pi-EnU"/>
+                            <constraint firstItem="jDN-aH-Auy" firstAttribute="trailing" secondItem="wa0-cw-FTP" secondAttribute="trailing" id="8Pf-r4-v79"/>
+                            <constraint firstItem="wa0-cw-FTP" firstAttribute="top" secondItem="jDN-aH-Auy" secondAttribute="top" id="ImD-ek-ApJ"/>
+                            <constraint firstItem="jDN-aH-Auy" firstAttribute="bottom" secondItem="wa0-cw-FTP" secondAttribute="bottom" id="MXC-qH-Xg2"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="ryt-CD-g4s"/>
+                    <navigationItem key="navigationItem" id="u10-dt-Nux"/>
                     <connections>
-                        <outlet property="tableView" destination="pf2-FW-T8T" id="qns-mH-DYe"/>
+                        <outlet property="tableView" destination="wa0-cw-FTP" id="T4j-qu-udt"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VSf-nA-Yk0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="132" y="110"/>
+            <point key="canvasLocation" x="126" y="110"/>
         </scene>
     </scenes>
     <resources>
