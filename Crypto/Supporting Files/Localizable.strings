@@ -1,0 +1,10 @@
+/* 
+  Localizable.strings
+  Crypto
+
+  Created by Virtual Machine on 22/09/21.
+  
+*/
+
+"ApiKEY" = "5203DD61-FBE8-4D26-95CB-68679E0B3D52";
+"ApiURL" = "https://rest.coinapi.io/v1/";

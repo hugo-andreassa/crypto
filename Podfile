@@ -6,5 +6,7 @@ target 'Crypto' do
   use_frameworks!
 
   # Pods for Crypto
+  pod 'SVProgressHUD'
+  pod 'KeychainSwift'
 
 end
