@@ -13,8 +13,9 @@ enum Currency: String {
 }
 
 class FormatterUtils {
-    static func formatToCurrency(_ value: Double, currency: Currency) -> String {
-        let formatter = NumberFormatter()
+    private let formatter = NumberFormatter()
+    
+    func formatToCurrency(_ value: Double, currency: Currency) -> String {
         formatter.locale = Locale(identifier: currency.rawValue)
         formatter.numberStyle = .currency
         

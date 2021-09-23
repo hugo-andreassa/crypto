@@ -24,6 +24,7 @@
 		BA7AB57D26FBCA2E003F3C2E /* CoinTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7AB57B26FBCA2E003F3C2E /* CoinTableViewCell.swift */; };
 		BA7AB57E26FBCA2E003F3C2E /* CoinTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA7AB57C26FBCA2E003F3C2E /* CoinTableViewCell.xib */; };
 		BAFA4BF426FBF402008DBC6B /* FormatterUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFA4BF326FBF402008DBC6B /* FormatterUtils.swift */; };
+		BAFFE26F26FCBE530034A07E /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFFE26E26FCBE530034A07E /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,7 @@
 		BA7AB57B26FBCA2E003F3C2E /* CoinTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinTableViewCell.swift; sourceTree = "<group>"; };
 		BA7AB57C26FBCA2E003F3C2E /* CoinTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CoinTableViewCell.xib; sourceTree = "<group>"; };
 		BAFA4BF326FBF402008DBC6B /* FormatterUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormatterUtils.swift; sourceTree = "<group>"; };
+		BAFFE26E26FCBE530034A07E /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		FF5072529B22A5848D156FCD /* Pods-Crypto.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Crypto.release.xcconfig"; path = "Target Support Files/Pods-Crypto/Pods-Crypto.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -126,6 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				BA7AB55126FB966C003F3C2E /* HomeViewController.swift */,
+				BAFFE26E26FCBE530034A07E /* DetailViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -153,8 +156,8 @@
 		BA7AB56526FB97A2003F3C2E /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				BA7AB56826FBA8DC003F3C2E /* CoinRateService.swift */,
 				BA7AB57626FBB88B003F3C2E /* CoinAssetService.swift */,
+				BA7AB56826FBA8DC003F3C2E /* CoinRateService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -305,6 +308,7 @@
 				BA7AB55226FB966C003F3C2E /* HomeViewController.swift in Sources */,
 				BAFA4BF426FBF402008DBC6B /* FormatterUtils.swift in Sources */,
 				BA7AB54E26FB966C003F3C2E /* AppDelegate.swift in Sources */,
+				BAFFE26F26FCBE530034A07E /* DetailViewController.swift in Sources */,
 				BA7AB56F26FBB165003F3C2E /* CoinRateData.swift in Sources */,
 				BA7AB56926FBA8DC003F3C2E /* CoinRateService.swift in Sources */,
 				BA7AB57D26FBCA2E003F3C2E /* CoinTableViewCell.swift in Sources */,

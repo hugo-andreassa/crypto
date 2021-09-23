@@ -20,37 +20,39 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KKt-j0-1Az">
                         <rect key="frame" x="10" y="10" width="300" height="64"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bitcoin" translatesAutoresizingMaskIntoConstraints="NO" id="jF8-Mn-Wt2">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BinanceIcon" translatesAutoresizingMaskIntoConstraints="NO" id="jF8-Mn-Wt2">
                                 <rect key="frame" x="0.0" y="0.0" width="64" height="64"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="64" id="B55-Gc-oYT"/>
                                     <constraint firstAttribute="height" constant="64" id="q8P-fn-OSW"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bitcoin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ym5-VJ-PLg">
-                                <rect key="frame" x="69" y="0.0" width="231" height="24"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$ 000.000.000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KYO-9h-E4v">
-                                <rect key="frame" x="69" y="44" width="231" height="20"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Ddt-Ey-2wn">
+                                <rect key="frame" x="69" y="5" width="226" height="54"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BTC - Bitcoin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ym5-VJ-PLg">
+                                        <rect key="frame" x="0.0" y="0.0" width="226" height="22"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$ 000.000.000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KYO-9h-E4v">
+                                        <rect key="frame" x="0.0" y="32" width="226" height="22"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="ym5-VJ-PLg" firstAttribute="leading" secondItem="jF8-Mn-Wt2" secondAttribute="trailing" constant="5" id="04k-Nk-Lu5"/>
-                            <constraint firstItem="ym5-VJ-PLg" firstAttribute="leading" secondItem="jF8-Mn-Wt2" secondAttribute="trailing" constant="5" id="3Yq-py-r4n"/>
                             <constraint firstItem="jF8-Mn-Wt2" firstAttribute="leading" secondItem="KKt-j0-1Az" secondAttribute="leading" id="60w-7f-U1w"/>
+                            <constraint firstItem="Ddt-Ey-2wn" firstAttribute="top" secondItem="KKt-j0-1Az" secondAttribute="top" constant="5" id="CVr-mw-MqP"/>
                             <constraint firstAttribute="bottom" secondItem="jF8-Mn-Wt2" secondAttribute="bottom" id="DFW-H0-UaQ"/>
-                            <constraint firstItem="ym5-VJ-PLg" firstAttribute="top" secondItem="KKt-j0-1Az" secondAttribute="top" id="HFF-AG-ZxH"/>
-                            <constraint firstItem="KYO-9h-E4v" firstAttribute="leading" secondItem="jF8-Mn-Wt2" secondAttribute="trailing" constant="5" id="K2O-8U-sDE"/>
-                            <constraint firstAttribute="trailing" secondItem="KYO-9h-E4v" secondAttribute="trailing" id="UYd-E2-KkA"/>
-                            <constraint firstAttribute="bottom" secondItem="KYO-9h-E4v" secondAttribute="bottom" id="Zhh-gW-Xh8"/>
-                            <constraint firstAttribute="trailing" secondItem="ym5-VJ-PLg" secondAttribute="trailing" id="bDN-h2-vXO"/>
+                            <constraint firstAttribute="trailing" secondItem="Ddt-Ey-2wn" secondAttribute="trailing" constant="5" id="JuP-Cl-MB2"/>
+                            <constraint firstAttribute="bottom" secondItem="Ddt-Ey-2wn" secondAttribute="bottom" constant="5" id="XPf-i9-uGc"/>
+                            <constraint firstItem="Ddt-Ey-2wn" firstAttribute="leading" secondItem="jF8-Mn-Wt2" secondAttribute="trailing" constant="5" id="haD-57-gRl"/>
                             <constraint firstItem="jF8-Mn-Wt2" firstAttribute="top" secondItem="KKt-j0-1Az" secondAttribute="top" id="ja8-mg-a65"/>
                         </constraints>
                     </view>
@@ -72,7 +74,7 @@
         </tableViewCell>
     </objects>
     <resources>
-        <image name="Bitcoin" width="256" height="256"/>
+        <image name="BinanceIcon" width="512" height="512"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

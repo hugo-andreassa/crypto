@@ -11,11 +11,22 @@ struct CoinAssetModel {
     let assetId: String
     let name: String
     let value: Double
+    let volume1Hrs: Double
+    let volume1Day: Double
+    let volume1Mth: Double
+    
+    private let formatterUtils = FormatterUtils()
     
     var formattedValue: String {
-        return FormatterUtils.formatToCurrency(self.value, currency: .us)
+        return formatterUtils.formatToCurrency(self.value, currency: .us)
     }
-    /*let volume_1hrs_usd: Double
-    let volume_1day_usd: Double
-    let volume_1mth_usd: Double*/
+    var formattedVolume1Hrs: String {
+        return formatterUtils.formatToCurrency(self.volume1Hrs, currency: .us)
+    }
+    var formattedVolume1Day: String {
+        return formatterUtils.formatToCurrency(self.volume1Day, currency: .us)
+    }
+    var formattedVolume1Mth: String {
+        return formatterUtils.formatToCurrency(self.volume1Mth, currency: .us)
+    }
 }
